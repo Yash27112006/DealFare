@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html{
+    font-size: 62.5%;
+}
+h1{
+  font-size: 10rem;
+  align-self: center;
+  align-items: center;
+}
+h2{
+  font-size: 4rem;
+  align-self: center;
+  align-items: center;
+  color: #fff;
+  margin-left: 40rem;
+  margin-top: 100rem;
+}
+  body {
+    font-family: "Montserrat";
+    background-color: rgb(3, 39, 71);
+  }
+  section {
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container {
+    width: 90%;
+    height: 75rem;
+    max-width: 50.0rem;
+    margin: 0 auto;
+    padding: 2.0rem;
+    box-shadow: 0rem 0rem 2.0rem #00000010;
+    background-color: rgb(151, 189, 211);
+    border-radius: 0.8rem;
+    margin-bottom: 2.0rem;
+    margin-top: 30rem;
+  }
+
+  @media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+
+
+  .form-group {
+    width: 100%;
+    margin-top: 1.0rem;
+    font-size: 2.0rem;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(128, 128, 128, 0.199);
+    margin-top: 0.1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 2.0rem;
+    font-size: 2.4rem;
+    border-radius: 0..8rem;
+    font-family: "Montserrat";
+    color: rgb(27, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1.0rem;
+    transition: 0.3s ease background-color;
+  }
+  button[type="submit"]:hover {
+    background-color: rgb(214, 226, 236);
+  }
+  #status {
+    width: 90%;
+    max-width: 50.0rem;
+    text-align: center;
+    padding: 1.0rem;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+  }
+  #status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+  }
+  #status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+  }
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 2.5rem;
+    margin-right: 2.0rem;
+    padding-bottom: 10rem;
+}
+ul li{
+   display: inline-block; 
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding:0.5rem 2.0rem;
+    font-size: 1.7rem;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.logo img{
+    float: left;
+    width: 13.0rem;
+    height: 10rem;
+    margin-left:2.0rem ;
+    margin-top: 2rem;
+    border-radius: 50%;
+}
+  

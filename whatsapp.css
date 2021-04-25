@@ -1,0 +1,48 @@
+/* for desktop */
+
+html{
+	font-size: 62.5%;
+}
+.whatsapp_float {
+	position:fixed;
+	width:60.0rem;
+	height:60.0rem;
+	bottom:1.0rem;
+	right:40.0rem;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:5.0rem;
+	text-align:center;
+        font-size:3.0rem;
+	box-shadow: 0.2rem 0.2rem 0.3rem #999;
+        z-index:100;
+}
+
+.whatsapp-icon {
+	margin-top:16.0rem;
+}
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+
+/* for mobile */
+@media screen and (max-width: 76.7rem){
+     .whatsapp-icon {
+	 margin-top:1.0rem;
+     }
+    .whatsapp_float {
+        width: 4.0rem;
+        height: 4.0rem;
+        bottom: 2.0rem;
+        right: 1.0rem;
+        font-size: 2.2rem;
+    }
+}

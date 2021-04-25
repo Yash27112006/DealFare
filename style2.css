@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding:0;
+    
+}
+html{
+    font-size: 62.5%;
+}
+ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 2.5rem;
+    margin-right: 2.0rem;
+}
+ul li{
+   display: inline-block; 
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding:0.5rem 2.0rem;
+    font-size: 1.7rem;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+
+
+
+
+.logo img{
+    float: left;
+    width: 13.0rem;
+    height: 10rem;
+    margin-left:2.0rem ;
+    margin-top: 2rem;
+    border-radius: 50%;
+}
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.1)), url(sectorRelax.png);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+.content{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.principal{
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+.principal h1{
+    font-size: 4.7rem;
+    margin-bottom: 1.0rem;
+}
+.principal p{
+    font-size: 2.0rem;
+}
+h3{
+    font-family: fantasy;
+}
+.container{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+h2{
+    margin-top: 2.5rem;
+    font-family: 'AgencyFB', sans-serif;
+    font-size: 5rem;
+}
+.btn{
+    border: 0.1rem solid #3498db; 
+    background: none; 
+    padding: 1.0rem 2.0rem; 
+    font-size: 2.0rem; 
+    font-family: "montserrat"; 
+    cursor: pointer; 
+    margin: 1.0rem; 
+    transition: 0.8s;
+    position: relative;
+    width: 23rem;
+    height: 5rem;
+    overflow: hidden;
+    scroll-padding-block: 2rem;
+}
+.btn1, .btn2{ 
+    color: white;
+} 
+.btn3, .btn4{ 
+    color: #fff;
+} 
+.btn1:hover, .btn2:hover{
+    color: white;
+}
+.btn3:hover, .btn4:hover{
+    color: #3498db; 
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+}
+.btn1::before, .btn3::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    padding: 3rem
+}
+.btn2::before, .btn4::before{ bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn3::before, .btn4::before{
+    height: 180%;
+}
+.btn1:hover::before, .btn2:hover::before{
+    height: 180%;
+}
+.btn3:hover::before, .btn4:hover::before{ 
+    height: 0%;
+}
